@@ -1,6 +1,6 @@
-import React,{ useState, useEffect } from 'react';
+import React  from 'react';
 import Register from './pages/register/register';
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from './pages/login/login';
 import './App.scss';
 import Home from './pages/home/home';
@@ -9,13 +9,8 @@ import NoMatch from './pages/blogpage/no-match/noMatch';
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
      const isAuthenticated = localStorage.getItem("email");
-   useEffect(() => {
-  if(isAuthenticated){
-    setLoading(false)
-  }
-   }, [isAuthenticated])
+
    
 
   return (
@@ -26,8 +21,7 @@ function App() {
         <Route path="login" element={<Login />} />
          <Route path="*" element={<NoMatch/>} />
         <Route path="blog" element={
-
-          isAuthenticated ?  <PostBlog /> : <NoMatch/>
+          isAuthenticated ? <PostBlog /> : <NoMatch/>
         } />
 
       </Routes>

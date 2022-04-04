@@ -40,10 +40,14 @@ a {
 	a {
 		text-align: center;
 		font-size: 30px;
+		color: blue;
 	}
 }
 .cross {
 	color: #fff;
 	background-color: transparent;
 	font-size: 21px;
+}
+::-webkit-scrollbar {
+width: 0px;
 }
