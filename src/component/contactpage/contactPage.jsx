@@ -21,7 +21,7 @@ const ContactPage = () => {
 				<span>contact@us.com</span>
               </div>	
 			</div>
-			<div className='contact-content'  data-aos='fade-left'>
+			<div className='contact-content'  data-aos='fade-down'>
 				<img
 					src='/asset/undraw_calling_re_mgft 1.png'
 					alt='illustration' height='80%' width='100%'
