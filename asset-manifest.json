@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mytestblog/static/css/main.89cc7f75.css",
+    "main.js": "/mytestblog/static/js/main.d3837ad8.js",
+    "static/media/Frame 14.png": "/mytestblog/static/media/Frame 14.fd4ab3e0edcb50d4167f.png",
+    "index.html": "/mytestblog/index.html",
+    "main.89cc7f75.css.map": "/mytestblog/static/css/main.89cc7f75.css.map",
+    "main.d3837ad8.js.map": "/mytestblog/static/js/main.d3837ad8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89cc7f75.css",
+    "static/js/main.d3837ad8.js"
+  ]
+}
