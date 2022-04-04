@@ -1,0 +1,20 @@
+/** @format */
+
+.section-two {
+	background-color: #fff !important;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 2rem 50px;
+
+	h1 {
+		color: #222;
+		margin-bottom: 30px;
+	}
+	p {
+		color: #222 !important;
+	}
+	span {
+		color: #ea7052;
+	}
+}

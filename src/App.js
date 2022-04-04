@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{ useState, useEffect } from 'react';
+import Register from './pages/register/register';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from './pages/login/login';
+import './App.scss';
+import Home from './pages/home/home';
+import PostBlog from './pages/blogpage/blog';
+import NoMatch from './pages/blogpage/no-match/noMatch';
 
 function App() {
+
+  const [loading, setLoading] = useState(true)
+     const isAuthenticated = localStorage.getItem("email");
+   useEffect(() => {
+  if(isAuthenticated){
+    setLoading(false)
+  }
+   }, [isAuthenticated])
+   
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="login" element={<Login />} />
+         <Route path="*" element={<NoMatch/>} />
+        <Route path="blog" element={
+
+          isAuthenticated ?  <PostBlog /> : <NoMatch/>
+        } />
+
+      </Routes>
     </div>
   );
 }

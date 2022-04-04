@@ -1,0 +1,49 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+p {
+	font-family: 'Abel', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 31px;
+	margin-top: 30px;
+}
+h1 {
+	font-family: 'Abel', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 72px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.link {
+	color: red;
+}
+.no-match {
+	display: grid;
+	place-items: center;
+
+	h1 {
+		text-align: center;
+		font-size: 50px;
+		margin-top: 30px;
+	}
+	a {
+		text-align: center;
+		font-size: 30px;
+	}
+}
+.cross {
+	color: #fff;
+	background-color: transparent;
+	font-size: 21px;
+}

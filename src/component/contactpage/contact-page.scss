@@ -1,0 +1,33 @@
+/** @format */
+
+.contact {
+	display: flex;
+	padding: 4rem 0;
+	background-color: #f4f4f4;
+
+	&-text {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 1rem 0rem;
+	}
+	&-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0rem 0.5rem;
+		height: 25px;
+	}
+	&-content:first-child {
+		margin: auto;
+		width: 500px;
+		padding: 0 4rem;
+	}
+	h2 {
+		font-family: 'Abel';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 82px;
+	}
+}

@@ -1,0 +1,37 @@
+/** @format */
+
+.btn {
+	font-size: 39px;
+	padding: 5% 20px;
+	color: #ffff;
+	font-family: 'abel', sans-serif;
+	width: 100%;
+	cursor: pointer;
+}
+.btn-sub {
+	font-size: 19px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	border: 1px solid #ea7052;
+	background: #ea7052;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.btn-main {
+	font-size: 19px;
+	border: 1px solid #ea7052;
+	border-radius: 6px;
+	margin-left: 5px;
+	background-color: transparent;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.btn-size {
+	font-size: 39px !important;
+	padding: 1.5rem 20px;
+	margin-top: 50px;
+}
