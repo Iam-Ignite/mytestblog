@@ -25,7 +25,7 @@ const SectionTwo = () => {
 					</p>
 					<Button lg>Get Started</Button>
 				</div>
-				<div className='page-content' data-aos='fade-left'>
+				<div className='page-content' data-aos='fade-up'>
 					<img
 						src='/asset/rasheed-kemy-oqY09oVTa3k-unsplash 1.png'
 						className='ads-img'
