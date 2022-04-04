@@ -18,3 +18,33 @@
 		padding: 0 16px;
 	}
 }
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+  .navbar {
+    padding: 0 25px;
+    justify-content: space-around;
+}
+    .navbar button{
+            font-size: 12px !important;
+    }
+    .ads-boxs span {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.ads-boxs button {
+    padding: 1px 6px;
+}
+.ads-boxs p{
+        font-size: 10px;
+}
+.navbar .nav-item {
+    width: 140px;
+    display: flex;
+}
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+}

@@ -27,7 +27,23 @@
 		font-family: 'Abel';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 64px;
+		font-size: 5vw;
 		line-height: 82px;
 	}
+}
+@media only screen and (max-width: 600px) {
+	/*Big smartphones [426px -> 600px]*/
+     .contact {
+    flex-direction: column-reverse;
+}
+.contact-content:first-child {
+    margin: auto;
+    width: 381px;
+}
+.contact h2{
+	font-size: 28px;
+}
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
 }

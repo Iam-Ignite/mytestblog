@@ -9,27 +9,29 @@ import './home.scss';
 const Home = () => {
 	return (
 		<div className='home-page'>
-		<Ads/>
+			<Ads />
 			<Navbar />
 			<section className='home'>
 				<div className='home-content'>
-					<h1>
+					<h1 data-aos="fade-up">
 						Our mission is to <br />
 						<span>advance</span> humanity
 					</h1>
 					<hr width='40%' />
-					<p>
+					<p data-aos="fade-left">
 						We would strive to achieve that through
 						providing <br />
 						education and quality health
 					</p>
 					<div className='home-item'>
 						<div className='home-items'>
-							<h3>
+							<h3 data-aos="fade-down-right">
 								DOWNLOAD <br /> APP
 							</h3>
 						</div>
-						<div className='home-items'>
+						<div
+							className='home-items'
+							   data-aos="fade-down">
 							<img
 								src='/asset/Frame 5.png'
 								className='home-icon'
@@ -44,17 +46,16 @@ const Home = () => {
 					</div>
 				</div>
 				<div className='home-content'>
-					<img
+					<img  data-aos="fade-down"
 						src='/asset/sharath-kumar-hari-Mb2LErousEY-unsplash 1.png'
-						width='100%'
-						height='500px'
-						alt=''
+						className='ads-img'
+						alt='thrg'
 					/>
 				</div>
 			</section>
 			<SectionTwo />
 			<ContactPage />
-			<Footer/>
+			<Footer />
 		</div>
 	);
 };

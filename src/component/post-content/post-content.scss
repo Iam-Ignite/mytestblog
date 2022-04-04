@@ -48,7 +48,7 @@
 	margin: auto;
 	place-items: center;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
 	p {
 		color: #fff;
@@ -76,3 +76,24 @@ h2 {
 .post-column p{
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+	/*Big smartphones [426px -> 600px]*/
+	
+.posts .blog-post-image {
+    width: 297px;
+    height: 250px;
+}
+.blog-post-two {
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+}
+.load {
+    width: 333px;
+}
+}
+@media only screen and (max-width: 425px) {
+	/*Small smartphones [325px -> 425px]*/
+}
+

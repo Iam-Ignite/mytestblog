@@ -1,7 +1,12 @@
+/** @format */
+
 import React, { useState, useEffect } from 'react';
 import Button from '../button/button';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import './post-content.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export const PostBlog = () => {
 	const [data, setData] = useState([]);
@@ -64,31 +69,33 @@ export const PostBlog = () => {
 					</div>
 				</div>
 			</div>
-			<InfiniteScroll 
-            next={fetchData} 
-            dataLength={data.length}
-            loader={<div className='load'>
+			<InfiniteScroll
+				next={fetchData}
+				dataLength={data.length}
+				loader={
+					<div className='load'>
 						<Button>Loading more ...</Button>
-					</div>}
-            hasMore={true}>
-			<h2>
-				<img
-					src='/asset/Group.svg'
-					height='25px'
-					alt='up'
-				/>
-				Trending
-			</h2>
-			<div className='trend-card'>
-				<div className='post-column'>
-					<PostBlogTrending
-						data={data}
-						success={success}
-						loading={loading}
-						error={error}
+					</div>
+				}
+				hasMore={true}>
+				<h2>
+					<img
+						src='/asset/Group.svg'
+						height='25px'
+						alt='up'
 					/>
+					Trending
+				</h2>
+				<div className='trend-card'>
+					<div className='post-column'>
+						<PostBlogTrending
+							data={data}
+							success={success}
+							loading={loading}
+							error={error}
+						/>
+					</div>
 				</div>
-			</div>
 			</InfiniteScroll>
 		</>
 	);
@@ -99,6 +106,8 @@ export const PostBlogTrending = ({
 	success,
 	error,
 }) => {
+	AOS.init({ duration: 2000 });
+
 	return (
 		<div>
 			{loading ? <p>Loading...</p> : <p>{error}</p>}
@@ -107,6 +116,7 @@ export const PostBlogTrending = ({
 				{data.map((item) => (
 					<div
 						className='blog-post-image'
+						data-aos='zoom-in-left'
 						key={item.id}
 						style={{
 							backgroundImage: `url(${item.metaImageUrl})`,
